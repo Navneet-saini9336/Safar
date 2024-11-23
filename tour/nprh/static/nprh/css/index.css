@@ -1,0 +1,413 @@
+<style type="text/css">
+        /* Container holding the image and the text */
+        .fluidcontainer {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        /* Bottom left text */
+        .bottom-left {
+            position: absolute;
+            bottom: 58px;
+            left: 40px;
+        }
+
+        /* Centered text */
+        .centered {
+            position: absolute;
+            top: 80%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Centered-next text */
+        .centered-next {
+            position: absolute;
+            top: 80%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+        }
+
+        .row {
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-right: 0px;
+
+            padding-left: 0px;
+        }
+
+        .class-1 {
+            border-top: 2px solid #8c8b8b;
+        }
+
+        .flip-card {
+            width: 75%;
+            height: 100px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 50%;
+            height: 100%;
+            text-align: center;
+            transition: transform 1.0s;
+            transform-style: preserve-3d;
+            margin-left: 100px;
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            color: black;
+            margin-left: 10px;
+        }
+
+        .flip-card-back {
+            color: black;
+            transform: rotateY(180deg);
+        }
+
+        .checked {
+            color: orange;
+        }
+
+        .fa-facebook {
+            background: #000;
+            color: #0052cc;
+        }
+
+        .fa-twitter {
+            background: #000;
+            color: #3385ff;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+
+        .fa-youtube {
+            background: #000;
+            color: #cc0000;
+        }
+
+        .fa-instagram {
+            background: #000;
+            color: #b30059;
+        }
+
+        #myDiv {
+            transform: rotateX(150deg);
+        }
+
+        .row {
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            color: black;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            min-width: 100px;
+            box-shadow: 0px 0px 5px 5px;
+            background-color: black;
+            padding: 12px 16px;
+            z-index: 1;
+            margin-top: -30px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            background-color: white;
+
+        }
+
+        #one {
+            margin-bottom: 0px;
+        }
+
+        #two {
+            height: 60px;
+            width: 70px;
+            margin-left: 25px;
+            border-radius: 50%;
+        }
+
+        #three {
+            height: 45px;
+            color: whitesmoke;
+            margin: 10px;
+        }
+
+        #four {
+            font-size: 15px;
+            margin-left: 25px;
+        }
+
+        #five {
+            width: 100%;
+            height: 550px;
+        }
+
+        #six {
+            font-size: 50px;
+            color: white;
+        }
+
+        #seven {
+            background-color: #1180cb;
+        }
+
+        #eight {
+            color: whitesmoke;
+        }
+
+        #nine {
+            box-shadow: 0px 0px 10px 10px;
+            background-color: rgb(150, 215, 215);
+            color: black;
+            text-align: center;
+        }
+
+        #ten {
+            box-shadow: 0px 0px 5px 5px;
+        }
+
+        #eleven {
+            text-align: center;
+            height: auto;
+        }
+
+        #twelve {
+            background-color: red;
+            color: whitesmoke;
+            text-align: center;
+            height: auto;
+        }
+
+        #thirteen {
+            color: black;
+            height: auto;
+            margin: auto;
+            font-size: 30px;
+        }
+
+        #fourteen {
+            height: 120px;
+        }
+
+        #fifteen {
+            border: 2px solid black;
+            box-shadow: 0px 0px 5px 5px;
+        }
+
+        #sixteen {
+            text-align: center;
+        }
+
+        #seventeen {
+            height: 550px;
+
+        }
+
+        .map {
+            margin-top: 10px;
+        }
+
+        #eighteen {
+            height: 150px;
+            text-align: center;
+            margin-top: 30px;
+            border: 2px solid black;
+        }
+
+        #nineteen {
+            height: 180px;
+        }
+
+        #twenty {
+            height: 100px;
+            background-color: #24B3B3;
+        }
+
+        #twenty-one {
+            text-align: center;
+            color: black;
+        }
+
+        #twenty-two {
+            border: 5px solid #24B3B3;
+            text-align: center;
+            height: 200px;
+        }
+
+        #twenty-three {
+            background-color: #24B3B3;
+            text-align: center;
+            height: 35px;
+        }
+
+        #twenty-four {
+            height: 33px;
+        }
+
+        #twenty-five {
+            background-color: black;
+            height: auto;
+        }
+
+        #twenty-six {
+            height: 300px;
+            text-align: center;
+        }
+
+        #twenty-eight {
+            color: red;
+        }
+
+        #twenty-nine {
+            color: whitesmoke;
+        }
+
+        #marque {
+            background-color: rgb(31, 15, 15);
+            color: white;
+            height: 25px;
+        }
+
+        #fafa1 {
+            font-size: 25px;
+            color: rgb(43, 43, 167);
+        }
+
+        #fafa2 {
+            font-size: 25px;
+            color: white;
+        }
+
+        #fafa3 {
+            font-size: 25px;
+        }
+
+        #fafa4 {
+            font-size: 25px;
+            color: #3385ff;
+        }
+
+        #fafa5 {
+            font-size: 25px;
+            color: #490809;
+        }
+
+        #fafa6 {
+            font-size: 25px;
+            color: #1180cb;
+        }
+
+        #fafa7 {
+            font-size: 25px;
+        }
+
+        #fafa8 {
+            font-size: 25px;
+            color: rgb(41, 142, 41);
+        }
+
+        #fafa9 {
+            font-size: 25px;
+        }
+
+        #fafafa {
+            text-align: center;
+        }
+
+        /*All CSS for Pop-up Models */
+        #pop-up-1 {
+            background-color: lightgray;
+            box-shadow: 0px 0px 2px 2px;
+            text-align: justify;
+        }
+
+        #pop-up-2 {
+            background-color: lightgray;
+            box-shadow: 0px 0px 2px 2px;
+            text-align: justify;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        #pop-up-3 {
+            color: red;
+        }
+
+        #fafa10 {
+            font-size: 100px;
+        }
+
+        #pop-up-4 {
+            text-align: center;
+        }
+
+        #pop-up-5 {
+            background-color: orange;
+        }
+
+        #image-1 {
+            height: 150px;
+            width: 100%;
+        }
+
+        #pop-up-6 {
+            margin-top: 20px;
+        }
+
+        #pop-up-7 {
+            color: red;
+        }
+
+        #pop-up-8 {
+            color: red;
+            text-align: right;
+        }
+
+        #fafa11 {
+            font-size: 30px;
+            color: rgb(2, 39, 2);
+        }
+
+        #fafa12 {
+            font-size: 30px;
+            color: #7e0303;
+        }
+
+        #fafa13 {
+            font-size: 30px;
+            color: rgb(149, 45, 7);
+        }
+
+        #fafa14 {
+            font-size: 30px;
+            color: rgb(2, 2, 63);
+        }
+    </style>

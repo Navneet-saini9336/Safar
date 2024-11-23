@@ -1,0 +1,165 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>User Registration</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    #p-3 {
+        font-size: 50px;
+        color: black;
+    }
+    .form-control {
+        height: 40px;
+        box-shadow: none;
+        color: #969fa4;
+    }
+
+    .form-control:focus {
+        border-color: #5cb85c;
+    }
+
+    .form-control,
+    .btn {
+        border-radius: 3px;
+    }
+    .signup-form h2 {
+        color: #636363;
+        margin: 0 0 15px;
+        position: relative;
+        text-align: center;
+    }
+    .signup-form h2:after {
+        content: "";
+        height: 2px;
+        width: 30%;
+        background: #d4d4d4;
+        position: absolute;
+        top: 50%;
+        z-index: 2;
+    }
+    .signup-form h2:before {
+        left: 0;
+    }
+
+    .signup-form h2:after {
+        right: 0;
+    }
+
+    .signup-form .hint-text {
+        color: #999;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .signup-form form {
+        color: #999;
+        border-radius: 3px;
+
+        background: #f2f3f7;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+    }
+
+    .signup-form .form-group {
+        margin-bottom: 20px;
+    }
+
+    .signup-form input[type="checkbox"] {
+        margin-top: 3px;
+    }
+
+    .signup-form .btn {
+        font-size: 16px;
+        font-weight: bold;
+        min-width: 140px;
+        outline: none !important;
+    }
+
+    .signup-form .row div:first-child {
+        padding-right: 10px;
+    }
+
+    .signup-form .row div:last-child {
+        padding-left: 10px;
+    }
+
+    .signup-form a {
+        color: #fff;
+        text-decoration: underline;
+    }
+
+    .signup-form a:hover {
+        text-decoration: none;
+    }
+
+    .signup-form form a {
+        color: #5cb85c;
+        text-decoration: none;
+    }
+
+    .signup-form form a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12" style="height:60px ;"><a href="/nprh">
+                    <i class="fa fa-home" id="p-3"></i>
+                </a></div>
+            <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12">
+
+            </div>
+            <div class="col-lg-6 col-md-8 col-sm-12" style="border: 3px solid black; border-radius: 3%;">
+                <img src="{% static 'nprh/images/travel.png' %}" style="height: 230px; width: 100%; margin-top: 10px;">
+                <h1 style="text-align: center;"><b> Registration</h1></b>
+                <form action="register" method="post">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" name="first_name" placeholder="First Name" required="required"
+                                style="width: 100%; height: 35px; ">
+
+                        </div>
+
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required"
+                                style="width: 100%; height: 35px;">
+                            <br><br>
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" name="username" placeholder="Username" required="required" style="width: 100%; height: 35px;">
+                    <br><br>
+
+
+                    <input type="email" class="form-control" name="email" placeholder="Email" required="required" style="width: 100%; height: 35px;">
+                    <br><br>
+                    <input type="password" class="form-control" name="password1" placeholder="Password" required="required" style="width: 100%; height: 35px;">
+                    <br><br>
+                    <input type="Password" class="form-control" name="password2" placeholder="Re-enter password"
+                    required="required" style="width: 100%;height: 35px;">
+                    <br><br>
+                    <p style="text-align: center;"> <input type="submit" class="btn btn-success" value="submit" style="width: 100%;"></p>
+                </form>
+
+                <div class="col-lg-3 col-md-2 col-sm-12"></div>
+            </div>
+        </div>
+        <div class="col-lg-12" style="height:30px ;"></div>
+        {% for message in messages %}
+        <h3>{{message}}</h3>
+        {% endfor %}
+</body>
+</html>

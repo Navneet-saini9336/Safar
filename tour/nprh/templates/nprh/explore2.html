@@ -1,0 +1,365 @@
+{% load static %}
+<html>
+
+<head>
+  <title></title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    .row {
+      margin-left: 0px;
+      margin-right: 0px;
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+
+    .fa {
+      padding: 15px;
+      font-size: 15px;
+      width: 40px;
+      text-align: left;
+      text-decoration: none;
+      margin: 5px 2px;
+      border-radius: 100%;
+      height: 40px;
+    }
+
+    #p-1 {
+      width: 100%;
+      height: 250px
+    }
+
+    #p-2 {
+      box-shadow: 0px 0px 5px 5px;
+      margin: 50px;
+      background-color: rgb(182, 236, 236);
+      color: black;
+      height: auto;
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+
+    #p-3 {
+      font-size: 50px;
+      color: black;
+    }
+
+    #p-4 {
+      width: 60%;
+      height: 100px;
+    }
+
+    #p-5 {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    #p-6-e {
+      font-size: 24px;
+      margin-top: 10px;
+      padding-top: 10px;
+      color: green;
+      margin-left: 18px;
+    }
+
+    #p-6-d {
+      font-size: 24px;
+      margin-top: 10px;
+      padding-top: 10px;
+      color: red;
+    }
+
+    #p-6-v {
+      font-size: 24px;
+      margin-top: 10px;
+      padding-top: 10px;
+      color: rgb(0, 70, 93);
+    }
+
+    #p-7 {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <!--main image-->
+  <div class="row">
+    <img src="{% static 'nprh/images/3.jpg' %}" id="p-1">
+  </div>
+
+  <!--heading-->
+  <div class="row">
+    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-4">
+      <a href="/nprh">
+        <i class="fa fa-home" id="p-3"></i>
+      </a>
+    </div>
+    <div class="col-lg-11 col-md-10 col-sm-9 col-xs-8" id="p-7">
+      <h2><i><b>Users Name</b></i></h2>
+    </div>
+  </div>
+
+  <!--start-->
+  <div class="container">
+    <div class="row " id="p-2">
+      <div class="container-fluid">
+        <div class="col-lg-3 col-md-3 col-sm-8 col-xs-8">
+          <img src="{% static 'nprh/images/100.jpg' %}" id="p-4">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6" id="p-5">
+          <h4>Rohit Sharma</h4>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6" id="p-5">
+          <h4>12/12/2020</h4>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 " id="p-5">
+          <h4>Kanpur</h4>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6" id="p-5">
+
+          <div class="row">
+            <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4">
+              <a href="#"><i class="fa fa-pencil" id="p-6-e"></i></a>
+            </div>
+
+            <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4">
+              <a href="#"><i class="fa fa-trash-o"id="p-6-d"></i></a>
+            </div>
+
+            <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4">
+              <a href="#"><i class="glyphicon glyphicon-eye-open"id="p-6-v"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--End-->
+
+  <!--start-->
+  <div class="container">
+    <div class="row " id="p-2">
+      <div class="container-fluid">
+        <div class="col-lg-3 col-md-3 col-sm-8 col-xs-8">
+          <img src="{% static 'nprh/images/101.jpg' %}" id="p-4">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6" id="p-5">
+          <h4>Mahi singh</h4>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6" id="p-5">
+          <h4>12/12/2020</h4>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 " id="p-5">
+          <h4>Chennai</h4>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6" id="p-5">
+
+          <div class="row">
+            <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4">
+              <a href="#"><i class="fa fa-pencil" id="p-6-e"></i></a>
+            </div>
+
+            <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4">
+              <a href="#"><i class="fa fa-trash-o"id="p-6-d"></i></a>
+            </div>
+
+            <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4">
+              <a href="#"><i class="glyphicon glyphicon-eye-open"id="p-6-v"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--End-->
+
+  <!--start-->
+  <div class="container">
+    <div class="row " id="p-2">
+      <div class="container-fluid">
+        <div class="col-lg-3 col-md-3 col-sm-8 col-xs-8">
+          <img src="{% static 'nprh/images/102.jpg' %}" id="p-4">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6" id="p-5">
+          <h4>Aman Singh</h4>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6" id="p-5">
+          <h4>12/12/2020</h4>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 " id="p-5">
+          <h4>Pune</h4>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6" id="p-5">
+
+          <div class="row">
+            <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4">
+              <a href="#"><i class="fa fa-pencil" id="p-6-e"></i></a>
+            </div>
+
+            <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4">
+              <a href="#"><i class="fa fa-trash-o"id="p-6-d"></i></a>
+            </div>
+
+            <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4">
+              <a href="#"><i class="glyphicon glyphicon-eye-open"id="p-6-v"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--End-->
+  <!--start-->
+  <div class="container">
+    <div class="row " id="p-2">
+      <div class="container-fluid">
+        <div class="col-lg-3 col-md-3 col-sm-8 col-xs-8">
+          <img src="{% static 'nprh/images/103.jpg' %}" id="p-4">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6" id="p-5">
+          <h4>Shweta Tiwari</h4>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6" id="p-5">
+          <h4>12/12/2020</h4>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 " id="p-5">
+          <h4>Mumbai</h4>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6" id="p-5">
+
+          <div class="row">
+            <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4">
+              <a href="#"><i class="fa fa-pencil" id="p-6-e"></i></a>
+            </div>
+
+            <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4">
+              <a href="#"><i class="fa fa-trash-o"id="p-6-d"></i></a>
+            </div>
+
+            <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4">
+              <a href="#"><i class="glyphicon glyphicon-eye-open"id="p-6-v"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--End-->
+  <!--start-->
+  <div class="container">
+    <div class="row " id="p-2">
+      <div class="container-fluid">
+        <div class="col-lg-3 col-md-3 col-sm-8 col-xs-8">
+          <img src="{% static 'nprh/images/104.jpg' %}" id="p-4">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6" id="p-5">
+          <h4>Swati Dwivedi</h4>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6" id="p-5">
+          <h4>12/12/2020</h4>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 " id="p-5">
+          <h4>Delhi</h4>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6" id="p-5">
+
+          <div class="row">
+            <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4">
+              <a href="#"><i class="fa fa-pencil" id="p-6-e"></i></a>
+            </div>
+
+            <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4">
+              <a href="#"><i class="fa fa-trash-o"id="p-6-d"></i></a>
+            </div>
+
+            <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4">
+              <a href="#"><i class="glyphicon glyphicon-eye-open"id="p-6-v"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--End-->
+  <!--start-->
+  <div class="container">
+    <div class="row " id="p-2">
+      <div class="container-fluid">
+        <div class="col-lg-3 col-md-3 col-sm-8 col-xs-8">
+          <img src="{% static 'nprh/images/105.jpg' %}" id="p-4">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6" id="p-5">
+          <h4>Anmol Mishra</h4>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6" id="p-5">
+          <h4>12/12/2020</h4>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 " id="p-5">
+          <h4>Kolkata</h4>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6" id="p-5">
+
+          <div class="row">
+            <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4">
+              <a href="#"><i class="fa fa-pencil" id="p-6-e"></i></a>
+            </div>
+
+            <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4">
+              <a href="#"><i class="fa fa-trash-o"id="p-6-d"></i></a>
+            </div>
+
+            <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4">
+              <a href="#"><i class="glyphicon glyphicon-eye-open"id="p-6-v"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--End-->
+
+
+
+
+
+</body>
+
+</html>
